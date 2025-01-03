@@ -6,7 +6,6 @@ from sousframe import *
 import tkinter as tk
 from PIL import Image, ImageTk
 from interface import *
-from reconnaitpointpy import *
 from communication import *
 from matplotlib.figure import Figure
 import matplotlib.pyplot as plt
