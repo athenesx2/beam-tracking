@@ -12,9 +12,6 @@ password = "tIdOtA!"
 def update_image():
     with open("memoire.txt", "r") as f:
         ip = f.readlines()[0][0:12]
-    if 1 == 1:
-        img = Image.open("test1.png")
-        return img
     response = requests.get(f"http://{ip}:5000/capture")
     img_data = response.content
     img = Image.open(BytesIO(img_data))
